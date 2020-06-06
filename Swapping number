@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdbool.h>
+main()
+{
+	char name[15];
+	printf("Write Your Name: ");
+	scanf("%s", name);
+	printf("\n Hello %s nice to Meet You" , name);
+	int a , b;
+	bool number;
+	printf("\n Write First Number:");
+	scanf("%d", &a);
+	printf("\n write Second Number:");
+	scanf("%d", &b);
+	number = a , b ;
+	printf("\n So the Two numbers Are %d and %d." , number?b,a:a,b);
+	printf("\n Lets Swap The Numbers");
+	printf("\n Now The Two Numbers Are %d and %d." , number?a,b:b,a);
+	printf("\n Thank You %s." , name);
+	return 0;
+
+}
