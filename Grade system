@@ -1,0 +1,32 @@
+#include<stdio.h>
+main()
+{
+	char name[15];
+	printf("Write Your Name: ");
+	scanf("%s", name);
+	printf("\n Hello %s nice to Meet You" , name);
+int marks;
+printf("\n Write Your Marks:")	;
+scanf("%d", &marks);
+if (marks>=85)
+{
+printf("You have got Grade A");
+}
+else if(marks<=84 && marks>=70)
+{
+	printf("You have got Grade B");
+}
+else if(marks<=69 && marks>=55)
+{
+	printf("You have got Grade C");
+}
+else if(marks<=54 && marks>=40)
+{
+	printf("You have got Grade D");
+}
+else if(marks<40)
+{
+	printf("You have got Grade F");
+}
+return 0;
+}
