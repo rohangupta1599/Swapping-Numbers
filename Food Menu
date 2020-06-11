@@ -1,0 +1,31 @@
+#include<stdio.h>
+main()
+{
+	printf("Hello Sir, Welcome To The Order Menu.\n Here Are the Items: \n 1. Sandwich, Rs 200 \n 2. French Fries, Rs 100 \n 3. Pizza, Rs 250 \n 4. Burger, Rs 300 \n 5. Tacos, Rs 150 ");
+	int choice;
+	scanf("%d", &choice);
+	switch (choice)
+	{
+		case 1 :
+		printf("You have Selected Food Item: Sandwich \n Your Total Amount : 200");
+		break;
+		case 2 :
+		printf("You have Selected Food Item: French Fries \n Your Total Amount : 100");
+		break;
+		case 3 :
+		printf("You have Selected Food Item: Pizza \n Your Total Amount : 250");
+		break;
+		case 4 : 
+		printf("You have Selected Food Item: Burger \n Your Total Amount : 300");
+		break;
+		case 5 :
+		printf("You have Selected Food Item: Tacos \n Your Total Amount : 150");
+		break;
+		case 6 :
+		printf("You Have Selected Our Hidden Menu No 6 Food Item: Pasta \n Your Total Amount :200 ");
+		break;
+		default : printf("Choice Invalid , Please Select The Number From The Above Choices");
+		
+	}
+	return 0;
+}
