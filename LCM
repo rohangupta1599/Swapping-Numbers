@@ -1,0 +1,25 @@
+#include<stdio.h>
+int lcm(int n,int m)
+{
+static	int common=1;
+	if(common%n==0 && common%m==0)
+	{return common;
+	}
+	common++;
+	lcm(n,m);
+	return common;
+	}
+
+main()
+{
+	int a,b,com;
+	int prime[100];
+	printf("Input");
+	printf("\nInput First Number:");
+	scanf("%d", &a);
+	printf("Input Second Number:");
+	scanf("%d",&b);
+	com=lcm(a,b);
+	printf("Output");
+	printf("\n The Lcm of %d and %d is %d",a,b,com);
+}
