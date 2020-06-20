@@ -1,0 +1,27 @@
+#include <stdio.h>
+void main()
+{
+	 int mat[3][3],a,b;
+	 printf("Input the elements in the matrix : \n");    
+	 
+	 for(a=0;a<3;a++)
+	 {
+	 	for(b=0;b<3;b++)
+	 	{
+		 
+	 	printf("\n Element-[%d][%d]:",a,b);
+	 	scanf("%d",&mat[a][b]);
+	 }
+	 }
+
+printf("\n The Matrix is :");
+for(a=0;a<3;a++)
+{
+	printf("\n");
+	for(b=0;b<3;b++)
+{
+		printf("%d\t",mat[a][b]);
+	}
+}
+return 0;
+}
